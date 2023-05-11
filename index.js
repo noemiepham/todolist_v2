@@ -135,10 +135,6 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-module.exports = (req, res) => {
-  res.status(404).json({ message: 'Not Found' });
-};
-
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
